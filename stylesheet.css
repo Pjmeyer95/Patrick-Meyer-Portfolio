@@ -1,0 +1,113 @@
+/* Consistent Styles */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 1em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+}
+
+nav a:hover {
+  background-color: red;
+  color: #333;
+}
+
+main {
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 800px;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+form button[type="submit"] {
+  background-color: #333;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+
+form button[type="submit"]:hover {
+  background-color: white;
+  color: #333;
+}
+
+img {
+  height: 300px;
+}
+
+@media screen and (max-width:798px) {
+  img {
+    height: 150px;
+  }
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; animation: infinite;/* Add this line */
+  justify-content: space-between;
+  flex-wrap: wrap; /* Add this line */
+}
+
+nav ul li a {
+  flex-basis: 25%; /* Add this line */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 1em;
+}
